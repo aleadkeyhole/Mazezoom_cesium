@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Hello World!</title>
   <script src="/Build/Cesium/Cesium.js"></script>
+  
   <style>
     @import url(/Build/Cesium/Widgets/widgets.css);
     html, body, #cesiumContainer {
@@ -20,6 +21,30 @@
 <div id="cesiumContainer"></div>
 <script>
     var viewer = new Cesium.Viewer('cesiumContainer');
+    var citizensBankPark = viewer.entities.add({
+  name : 'Citizens Bank Park',
+  position : Cesium.Cartesian3.fromDegrees(-75.166493, 39.9060534),
+  point : {
+    pixelSize : 5,
+	color : Cesium.Color.RED,
+	outlineColor : Cesium.Color.WHITE,
+	outlineWidth : 2
+  },
+  label : {
+	text : 'Citizens Bank Park',
+    font : '14pt monospace',
+    style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+    outlineWidth : 2,
+    verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
+    pixelOffset : new Cesium.Cartesian2(0, -9)
+  }
+});
+
+viewer.zoomTo(viewer.entities);
 </script>
+
+<div id="controlPanel">
+  
+</div>
 </body>
 </html>
