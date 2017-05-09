@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Use correct character set. -->
   <meta charset="utf-8">
@@ -8,43 +9,31 @@
   <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Hello World!</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
   <script src="/Build/Cesium/Cesium.js"></script>
-  
-  <style>
-    @import url(/Build/Cesium/Widgets/widgets.css);
-    html, body, #cesiumContainer {
-      width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
-    }
-  </style>
+
+  <link rel="stylesheet" href="/Style/Main.css">
+  </script>
 </head>
+
 <body>
-<div id="cesiumContainer"></div>
-<script>
-    var viewer = new Cesium.Viewer('cesiumContainer');
-    var citizensBankPark = viewer.entities.add({
-  name : 'Citizens Bank Park',
-  position : Cesium.Cartesian3.fromDegrees(-75.166493, 39.9060534),
-  point : {
-    pixelSize : 5,
-	color : Cesium.Color.RED,
-	outlineColor : Cesium.Color.WHITE,
-	outlineWidth : 2
-  },
-  label : {
-	text : 'Citizens Bank Park',
-    font : '14pt monospace',
-    style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-    outlineWidth : 2,
-    verticalOrigin : Cesium.VerticalOrigin.BOTTOM,
-    pixelOffset : new Cesium.Cartesian2(0, -9)
-  }
-});
-
-viewer.zoomTo(viewer.entities);
-</script>
-
-<div id="controlPanel">
-  
-</div>
+  <div class="container" style="height:100%; width:100%; padding:0px;;  margin:0%!important;">
+        <div id="cesiumContainer"></div>
+  </div>
 </body>
+<script src="Main.js"></script>
+
 </html>
