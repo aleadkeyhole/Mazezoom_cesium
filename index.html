@@ -8,32 +8,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <title>Hello World!</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-  <!-- Latest compiled and minified CSS -->
+  <title>Axiell Cesium view</title>
+
+  <link href="http://cesiumjs.org/releases/1.15/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-
-  <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="/Style/Main.css">
 
-  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-
   <script src="/Build/Cesium/Cesium.js"></script>
-
-  <link rel="stylesheet" href="/Style/Main.css">
   </script>
 </head>
 
 <body>
   <div class="container" style="height:100%; width:100%; padding:0px;;  margin:0%!important;">
-        <div id="cesiumContainer"></div>
+    <div id="cesiumContainer"></div>
+    <div id="controlPanel">Control panel <p>
+        <label>
+      <input id="cb_toggle_display" type="checkbox" unchecked />
+      <span>Enable preferences</span>
+
+    </label><br/>
+        <div id="menu" style="display: none">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="preference_toggle_button" data-toggle="dropdown">filter markers
+    <span class="caret" ></span></button>
+            <ul id="dd_preferences" class="dropdown-menu">
+              <li class="preference"><a>View all</a></li>
+            </ul>
+          </div>
+          <hr>
+          </hr>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="location_presets_toggle_button" data-toggle="dropdown">location prefix
+    <span class="caret" ></span></button>
+            <ul id="presets_locations" class="dropdown-menu">
+            </ul>
+          </div>
+        </div>
+        <!--</p>-->
+    </div>
   </div>
 </body>
 <script src="Main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD829u5au5uuua7yfwKQ-o3ZNmR3HbHGnc"></script>
 
 </html>
