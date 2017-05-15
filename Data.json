@@ -1,0 +1,2446 @@
+[
+    {
+        "location": {
+            "title": "Haus der Offiziere",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1912",
+            "end": "1995",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1912",
+                    "end": "1912",
+                    "description": "initial build date",
+                    "lat": "52.1639671",
+                    "lon": "13.4847851"
+                },
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "closing date",
+                    "lat": "52.1639671",
+                    "lon": "13.4847851"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Sociedade de Porcelanas de Coimbra",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1922",
+            "end": "2005",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1922",
+                    "end": "1922",
+                    "description": "initial build date",
+                    "lat": "40.1977844",
+                    "lon": "-8.4198484"
+                },
+                {
+                    "start": "2005",
+                    "end": "2005",
+                    "description": "closing date",
+                    "lat": "40.1977844",
+                    "lon": "-8.4198484"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Victoria Barracks",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1956",
+            "end": "1994",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1956",
+                    "end": "1956",
+                    "description": "initial build date",
+                    "lat": "51.5120316",
+                    "lon": "7.8849878"
+                },
+                {
+                    "start": "1994",
+                    "end": "1994",
+                    "description": "closing date",
+                    "lat": "51.5120316",
+                    "lon": "7.8849878"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Chateau Vyle",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1910",
+            "end": "2010",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1910",
+                    "end": "1910",
+                    "description": "initial build date",
+                    "lat": "50.4444656",
+                    "lon": "5.2624578"
+                },
+                {
+                    "start": "2010",
+                    "end": "2010",
+                    "description": "closing date",
+                    "lat": "50.4444656",
+                    "lon": "5.2624578"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Brikettfabrik Knappenrode",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1914",
+            "end": "1993",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1914",
+                    "end": "1914",
+                    "description": "initial build date",
+                    "lat": "51.3967400",
+                    "lon": "14.3271141"
+                },
+                {
+                    "start": "1993",
+                    "end": "1993",
+                    "description": "closing date",
+                    "lat": "51.3967400",
+                    "lon": "14.3271141"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Companhia de Celulose do Caima",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1888",
+            "end": "1993",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1888",
+                    "end": "1888",
+                    "description": "initial build date",
+                    "lat": "40.7362518",
+                    "lon": "-8.4622202"
+                },
+                {
+                    "start": "1993",
+                    "end": "1993",
+                    "description": "closing date",
+                    "lat": "40.7362518",
+                    "lon": "-8.4622202"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Dongecentrale",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1919",
+            "end": "2011",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1919",
+                    "end": "1919",
+                    "description": "initial build date",
+                    "lat": "51.6950073",
+                    "lon": "4.8470001"
+                },
+                {
+                    "start": "2011",
+                    "end": "2011",
+                    "description": "closing date",
+                    "lat": "51.6950073",
+                    "lon": "4.8470001"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Bekaert Hemiksem",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1953",
+            "end": "2008",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1953",
+                    "end": "1953",
+                    "description": "initial build date",
+                    "lat": "51.1357765",
+                    "lon": "4.3324480"
+                },
+                {
+                    "start": "2008",
+                    "end": "2008",
+                    "description": "closing date",
+                    "lat": "51.1357765",
+                    "lon": "4.3324480"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Manufacture Franco-Belge de Tapis",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1923",
+            "end": "2012",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1923",
+                    "end": "1923",
+                    "description": "initial build date",
+                    "lat": "50.8061028",
+                    "lon": "3.1897449"
+                },
+                {
+                    "start": "2012",
+                    "end": "2012",
+                    "description": "closing date",
+                    "lat": "50.8061028",
+                    "lon": "3.1897449"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Kraftwerk Hirschfelde",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1911",
+            "end": "1992",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1911",
+                    "end": "1911",
+                    "description": "initial build date",
+                    "lat": "50.9376068",
+                    "lon": "14.8910465"
+                },
+                {
+                    "start": "1992",
+                    "end": "1992",
+                    "description": "closing date",
+                    "lat": "50.9376068",
+                    "lon": "14.8910465"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Flugplatz Brand",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1938",
+            "end": "1992",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1938",
+                    "end": "1938",
+                    "description": "initial build date",
+                    "lat": "52.0374985",
+                    "lon": "13.7486115"
+                },
+                {
+                    "start": "1992",
+                    "end": "1992",
+                    "description": "closing date",
+                    "lat": "52.0374985",
+                    "lon": "13.7486115"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Papierfabriek Louis De Naeyer",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1860",
+            "end": "2004",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1860",
+                    "end": "1860",
+                    "description": "initial build date",
+                    "lat": "51.0612831",
+                    "lon": "4.3646169"
+                },
+                {
+                    "start": "2004",
+                    "end": "2004",
+                    "description": "closing date",
+                    "lat": "51.0612831",
+                    "lon": "4.3646169"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Circuit Reims-Gueux",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1926",
+            "end": "1972",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1926",
+                    "end": "1926",
+                    "description": "initial build date",
+                    "lat": "49.2540627",
+                    "lon": "3.9306710"
+                },
+                {
+                    "start": "1972",
+                    "end": "1972",
+                    "description": "closing date",
+                    "lat": "49.2540627",
+                    "lon": "3.9306710"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Chernobyl Power Plant",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1970",
+            "end": "1986",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1970",
+                    "end": "1970",
+                    "description": "initial build date",
+                    "lat": "51.3899765",
+                    "lon": "30.0944672"
+                },
+                {
+                    "start": "1986",
+                    "end": "1986",
+                    "description": "closing date",
+                    "lat": "51.3899765",
+                    "lon": "30.0944672"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Feintuchwerke F.F. Koswig",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1886",
+            "end": "1947",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1886",
+                    "end": "1886",
+                    "description": "initial build date",
+                    "lat": "51.6287804",
+                    "lon": "13.6995592"
+                },
+                {
+                    "start": "1947",
+                    "end": "1947",
+                    "description": "closing date",
+                    "lat": "51.6287804",
+                    "lon": "13.6995592"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Centrale Idroelettrica Isola",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1907",
+            "end": "1974",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1907",
+                    "end": "1907",
+                    "description": "initial build date",
+                    "lat": "46.0647087",
+                    "lon": "10.4182682"
+                },
+                {
+                    "start": "1974",
+                    "end": "1974",
+                    "description": "closing date",
+                    "lat": "46.0647087",
+                    "lon": "10.4182682"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Grand Hotel Prealpi",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1911",
+            "end": "1985",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1911",
+                    "end": "1911",
+                    "description": "initial build date",
+                    "lat": "45.8765335",
+                    "lon": "8.9157495"
+                },
+                {
+                    "start": "1985",
+                    "end": "1985",
+                    "description": "closing date",
+                    "lat": "45.8765335",
+                    "lon": "8.9157495"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Het Goese Lyceum",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1939",
+            "end": "2014",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1939",
+                    "end": "1939",
+                    "description": "initial build date",
+                    "lat": "51.5000305",
+                    "lon": "3.8995509"
+                },
+                {
+                    "start": "2014",
+                    "end": "2014",
+                    "description": "closing date",
+                    "lat": "51.5000305",
+                    "lon": "3.8995509"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Lavoir et Carbonisage de Dolhain",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1860",
+            "end": "1960",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1860",
+                    "end": "1860",
+                    "description": "initial build date",
+                    "lat": "50.6143570",
+                    "lon": "5.9339089"
+                },
+                {
+                    "start": "1960",
+                    "end": "1960",
+                    "description": "closing date",
+                    "lat": "50.6143570",
+                    "lon": "5.9339089"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Steenkoolmijn van Beringen",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1901",
+            "end": "1989",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1901",
+                    "end": "1901",
+                    "description": "initial build date",
+                    "lat": "51.0691414",
+                    "lon": "5.2222071"
+                },
+                {
+                    "start": "1989",
+                    "end": "1989",
+                    "description": "closing date",
+                    "lat": "51.0691414",
+                    "lon": "5.2222071"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Navo Satcom F1",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1969",
+            "end": "2012",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1969",
+                    "end": "1969",
+                    "description": "initial build date",
+                    "lat": "50.7720261",
+                    "lon": "4.1007380"
+                },
+                {
+                    "start": "2012",
+                    "end": "2012",
+                    "description": "closing date",
+                    "lat": "50.7720261",
+                    "lon": "4.1007380"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Fabrica de cemento de Xerallo",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1948",
+            "end": "1973",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1948",
+                    "end": "1948",
+                    "description": "initial build date",
+                    "lat": "42.3696632",
+                    "lon": "0.8651090"
+                },
+                {
+                    "start": "1973",
+                    "end": "1973",
+                    "description": "closing date",
+                    "lat": "42.3696632",
+                    "lon": "0.8651090"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Klooster van de Liefdezusters van het Kostbaar Bloed",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1874",
+            "end": "1995",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1874",
+                    "end": "1874",
+                    "description": "initial build date",
+                    "lat": "51.0521622",
+                    "lon": "5.9571829"
+                },
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "closing date",
+                    "lat": "51.0521622",
+                    "lon": "5.9571829"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Koninklijk Lyceum Tienen",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1955",
+            "end": "2011",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1955",
+                    "end": "1955",
+                    "description": "initial build date",
+                    "lat": "50.8116951",
+                    "lon": "4.9308629"
+                },
+                {
+                    "start": "2011",
+                    "end": "2011",
+                    "description": "closing date",
+                    "lat": "50.8116951",
+                    "lon": "4.9308629"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "The Viking Film Set",
+            "type": "Painter",
+            "description": "empty",
+            "start": "2011",
+            "end": "2012",
+            "picture": "",
+            "point": [
+                {
+                    "start": "2011",
+                    "end": "2011",
+                    "description": "initial build date",
+                    "lat": "64.2606659",
+                    "lon": "-14.9843378"
+                },
+                {
+                    "start": "2012",
+                    "end": "2012",
+                    "description": "closing date",
+                    "lat": "64.2606659",
+                    "lon": "-14.9843378"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Fliegerhorst der Luftwaffe Zerbst",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1935",
+            "end": "1992",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1935",
+                    "end": "1935",
+                    "description": "initial build date",
+                    "lat": "51.9948387",
+                    "lon": "12.1283150"
+                },
+                {
+                    "start": "1992",
+                    "end": "1992",
+                    "description": "closing date",
+                    "lat": "51.9948387",
+                    "lon": "12.1283150"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Heeresversuchsanstalt Hillersleben",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1935",
+            "end": "1994",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1935",
+                    "end": "1935",
+                    "description": "initial build date",
+                    "lat": "52.2792702",
+                    "lon": "11.4859848"
+                },
+                {
+                    "start": "1994",
+                    "end": "1994",
+                    "description": "closing date",
+                    "lat": "52.2792702",
+                    "lon": "11.4859848"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Sanatorio de Tuberculosos de la Marina",
+            "type": "Painter",
+            "description": "empty",
+            "start": "1943",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1943",
+                    "end": "1943",
+                    "description": "initial build date",
+                    "lat": "40.7124786",
+                    "lon": "-4.0827765"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "40.7124786",
+                    "lon": "-4.0827765"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Hospital de Tuberculosos de La Tablada",
+            "type": "City",
+            "description": "empty",
+            "start": "1936",
+            "end": "1937",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1936",
+                    "end": "1936",
+                    "description": "initial build date",
+                    "lat": "40.7052689",
+                    "lon": "-4.1270199"
+                },
+                {
+                    "start": "1937",
+                    "end": "1937",
+                    "description": "closing date",
+                    "lat": "40.7052689",
+                    "lon": "-4.1270199"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Sanatorio de La Barranca",
+            "type": "City",
+            "description": "empty",
+            "start": "1941",
+            "end": "1995",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1941",
+                    "end": "1941",
+                    "description": "initial build date",
+                    "lat": "40.7445984",
+                    "lon": "-4.0007992"
+                },
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "closing date",
+                    "lat": "40.7445984",
+                    "lon": "-4.0007992"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Algemeen Burger Gasthuis",
+            "type": "City",
+            "description": "empty",
+            "start": "1880",
+            "end": "2010",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1880",
+                    "end": "1880",
+                    "description": "initial build date",
+                    "lat": "51.4917717",
+                    "lon": "4.2914782"
+                },
+                {
+                    "start": "2010",
+                    "end": "2010",
+                    "description": "closing date",
+                    "lat": "51.4917717",
+                    "lon": "4.2914782"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Albrechtshaus",
+            "type": "City",
+            "description": "empty",
+            "start": "1897",
+            "end": "1993",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1897",
+                    "end": "1897",
+                    "description": "initial build date",
+                    "lat": "51.6421547",
+                    "lon": "10.9251671"
+                },
+                {
+                    "start": "1993",
+                    "end": "1993",
+                    "description": "closing date",
+                    "lat": "51.6421547",
+                    "lon": "10.9251671"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Nato Satcom",
+            "type": "City",
+            "description": "empty",
+            "start": "1972",
+            "end": "2004",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1972",
+                    "end": "1972",
+                    "description": "initial build date",
+                    "lat": "51.9527588",
+                    "lon": "4.8505611"
+                },
+                {
+                    "start": "2004",
+                    "end": "2004",
+                    "description": "closing date",
+                    "lat": "51.9527588",
+                    "lon": "4.8505611"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Ternaaien Groeve",
+            "type": "City",
+            "description": "empty",
+            "start": "1100",
+            "end": "1850",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1100",
+                    "end": "1100",
+                    "description": "initial build date",
+                    "lat": "50.8055649",
+                    "lon": "5.6851220"
+                },
+                {
+                    "start": "1850",
+                    "end": "1850",
+                    "description": "closing date",
+                    "lat": "50.8055649",
+                    "lon": "5.6851220"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Forges de Clabecq",
+            "type": "City",
+            "description": "empty",
+            "start": "1888",
+            "end": "1996",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1888",
+                    "end": "1888",
+                    "description": "initial build date",
+                    "lat": "50.6826706",
+                    "lon": "4.2204528"
+                },
+                {
+                    "start": "1996",
+                    "end": "1996",
+                    "description": "closing date",
+                    "lat": "50.6826706",
+                    "lon": "4.2204528"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Hippodrome de Groenendaal",
+            "type": "City",
+            "description": "empty",
+            "start": "1887",
+            "end": "1995",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1887",
+                    "end": "1887",
+                    "description": "initial build date",
+                    "lat": "50.7610931",
+                    "lon": "4.4375172"
+                },
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "closing date",
+                    "lat": "50.7610931",
+                    "lon": "4.4375172"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Radio Kootwijk",
+            "type": "City",
+            "description": "empty",
+            "start": "1918",
+            "end": "2001",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1918",
+                    "end": "1918",
+                    "description": "initial build date",
+                    "lat": "52.1763878",
+                    "lon": "5.8325000"
+                },
+                {
+                    "start": "2001",
+                    "end": "2001",
+                    "description": "closing date",
+                    "lat": "52.1763878",
+                    "lon": "5.8325000"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Sinai Centrum Amersfoort",
+            "type": "City",
+            "description": "empty",
+            "start": "1958",
+            "end": "2007",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1958",
+                    "end": "1958",
+                    "description": "initial build date",
+                    "lat": "52.1358032",
+                    "lon": "5.3629198"
+                },
+                {
+                    "start": "2007",
+                    "end": "2007",
+                    "description": "closing date",
+                    "lat": "52.1358032",
+                    "lon": "5.3629198"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Jansen Wagonbouw",
+            "type": "City",
+            "description": "empty",
+            "start": "1947",
+            "end": "1993",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1947",
+                    "end": "1947",
+                    "description": "initial build date",
+                    "lat": "51.4860535",
+                    "lon": "4.2951918"
+                },
+                {
+                    "start": "1993",
+                    "end": "1993",
+                    "description": "closing date",
+                    "lat": "51.4860535",
+                    "lon": "4.2951918"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "De Zeeland",
+            "type": "City",
+            "description": "empty",
+            "start": "1918",
+            "end": "1929",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1918",
+                    "end": "1918",
+                    "description": "initial build date",
+                    "lat": "51.4925652",
+                    "lon": "4.2754850"
+                },
+                {
+                    "start": "1929",
+                    "end": "1929",
+                    "description": "closing date",
+                    "lat": "51.4925652",
+                    "lon": "4.2754850"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Altes Lager",
+            "type": "City",
+            "description": "empty",
+            "start": "1870",
+            "end": "1994",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1870",
+                    "end": "1870",
+                    "description": "initial build date",
+                    "lat": "52.0199890",
+                    "lon": "12.9933748"
+                },
+                {
+                    "start": "1994",
+                    "end": "1994",
+                    "description": "closing date",
+                    "lat": "52.0199890",
+                    "lon": "12.9933748"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Koninklijke Maatschappij De Schelde",
+            "type": "City",
+            "description": "empty",
+            "start": "1875",
+            "end": "2000",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1875",
+                    "end": "1875",
+                    "description": "initial build date",
+                    "lat": "51.4476318",
+                    "lon": "3.5814490"
+                },
+                {
+                    "start": "2000",
+                    "end": "2000",
+                    "description": "closing date",
+                    "lat": "51.4476318",
+                    "lon": "3.5814490"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Timmerfabriek De Schelde",
+            "type": "City",
+            "description": "empty",
+            "start": "1914",
+            "end": "1990",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1914",
+                    "end": "1914",
+                    "description": "initial build date",
+                    "lat": "51.4462357",
+                    "lon": "3.5827811"
+                },
+                {
+                    "start": "1990",
+                    "end": "1990",
+                    "description": "closing date",
+                    "lat": "51.4462357",
+                    "lon": "3.5827811"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Bedrijfsschool De Schelde",
+            "type": "City",
+            "description": "empty",
+            "start": "1950",
+            "end": "2000",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1950",
+                    "end": "1950",
+                    "description": "initial build date",
+                    "lat": "51.4484673",
+                    "lon": "3.5838549"
+                },
+                {
+                    "start": "2000",
+                    "end": "2000",
+                    "description": "closing date",
+                    "lat": "51.4484673",
+                    "lon": "3.5838549"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Zware Plaatwerkerij De Schelde",
+            "type": "City",
+            "description": "empty",
+            "start": "1929",
+            "end": "2004",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1929",
+                    "end": "1929",
+                    "description": "initial build date",
+                    "lat": "51.4446754",
+                    "lon": "3.5747809"
+                },
+                {
+                    "start": "2004",
+                    "end": "2004",
+                    "description": "closing date",
+                    "lat": "51.4446754",
+                    "lon": "3.5747809"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Machinefabriek De Schelde",
+            "type": "City",
+            "description": "empty",
+            "start": "1913",
+            "end": "2004",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1913",
+                    "end": "1913",
+                    "description": "initial build date",
+                    "lat": "51.4455261",
+                    "lon": "3.5788410"
+                },
+                {
+                    "start": "2004",
+                    "end": "2004",
+                    "description": "closing date",
+                    "lat": "51.4455261",
+                    "lon": "3.5788410"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Kasteel van Mesen",
+            "type": "City",
+            "description": "empty",
+            "start": "1628",
+            "end": "1972",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1628",
+                    "end": "1628",
+                    "description": "initial build date",
+                    "lat": "50.9675674",
+                    "lon": "3.9853959"
+                },
+                {
+                    "start": "1972",
+                    "end": "1972",
+                    "description": "closing date",
+                    "lat": "50.9675674",
+                    "lon": "3.9853959"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Steenbakkerijen Frateur",
+            "type": "City",
+            "description": "empty",
+            "start": "1923",
+            "end": "1986",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1923",
+                    "end": "1923",
+                    "description": "initial build date",
+                    "lat": "51.0952606",
+                    "lon": "4.3488669"
+                },
+                {
+                    "start": "1986",
+                    "end": "1986",
+                    "description": "closing date",
+                    "lat": "51.0952606",
+                    "lon": "4.3488669"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Spreepark Plaenterwald",
+            "type": "City",
+            "description": "empty",
+            "start": "1969",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1969",
+                    "end": "1969",
+                    "description": "initial build date",
+                    "lat": "52.4863281",
+                    "lon": "13.4890699"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "52.4863281",
+                    "lon": "13.4890699"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Fort Steendorp",
+            "type": "City",
+            "description": "empty",
+            "start": "1892",
+            "end": "1995",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1892",
+                    "end": "1892",
+                    "description": "initial build date",
+                    "lat": "51.1270638",
+                    "lon": "4.2570262"
+                },
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "closing date",
+                    "lat": "51.1270638",
+                    "lon": "4.2570262"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Mattekot",
+            "type": "City",
+            "description": "empty",
+            "start": "17",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "17",
+                    "end": "17",
+                    "description": "initial build date",
+                    "lat": "50.9279556",
+                    "lon": "4.4225750"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "50.9279556",
+                    "lon": "4.4225750"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Douane Station Essen",
+            "type": "City",
+            "description": "empty",
+            "start": "1891",
+            "end": "1988",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1891",
+                    "end": "1891",
+                    "description": "initial build date",
+                    "lat": "51.4636917",
+                    "lon": "4.4492302"
+                },
+                {
+                    "start": "1988",
+                    "end": "1988",
+                    "description": "closing date",
+                    "lat": "51.4636917",
+                    "lon": "4.4492302"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Landsberger Arkaden Berlin",
+            "type": "City",
+            "description": "empty",
+            "start": "1995",
+            "end": "1996",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "initial build date",
+                    "lat": "52.5281944",
+                    "lon": "13.4572239"
+                },
+                {
+                    "start": "1996",
+                    "end": "1996",
+                    "description": "closing date",
+                    "lat": "52.5281944",
+                    "lon": "13.4572239"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Olympisches Dorf Berlin",
+            "type": "City",
+            "description": "empty",
+            "start": "1933",
+            "end": "1992",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1933",
+                    "end": "1933",
+                    "description": "initial build date",
+                    "lat": "52.5397911",
+                    "lon": "13.0128517"
+                },
+                {
+                    "start": "1992",
+                    "end": "1992",
+                    "description": "closing date",
+                    "lat": "52.5397911",
+                    "lon": "13.0128517"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Het Stedelijk Slachthuis",
+            "type": "City",
+            "description": "empty",
+            "start": "1977",
+            "end": "2000",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1977",
+                    "end": "1977",
+                    "description": "initial build date",
+                    "lat": "51.2296944",
+                    "lon": "4.4356070"
+                },
+                {
+                    "start": "2000",
+                    "end": "2000",
+                    "description": "closing date",
+                    "lat": "51.2296944",
+                    "lon": "4.4356070"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Vakantiepark Hotel Kosmos",
+            "type": "City",
+            "description": "empty",
+            "start": "1934",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1934",
+                    "end": "1934",
+                    "description": "initial build date",
+                    "lat": "50.7875023",
+                    "lon": "2.7613330"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "50.7875023",
+                    "lon": "2.7613330"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "ECI Roermond",
+            "type": "City",
+            "description": "empty",
+            "start": "1920",
+            "end": "1974",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1920",
+                    "end": "1920",
+                    "description": "initial build date",
+                    "lat": "51.1894760",
+                    "lon": "5.9804769"
+                },
+                {
+                    "start": "1974",
+                    "end": "1974",
+                    "description": "closing date",
+                    "lat": "51.1894760",
+                    "lon": "5.9804769"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "SAFEA",
+            "type": "City",
+            "description": "empty",
+            "start": "1900",
+            "end": "1978",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1900",
+                    "end": "1900",
+                    "description": "initial build date",
+                    "lat": "50.4902191",
+                    "lon": "4.1759062"
+                },
+                {
+                    "start": "1978",
+                    "end": "1978",
+                    "description": "closing date",
+                    "lat": "50.4902191",
+                    "lon": "4.1759062"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Provinciaal Ziekenhuis Santepoort",
+            "type": "City",
+            "description": "empty",
+            "start": "1849",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1849",
+                    "end": "1849",
+                    "description": "initial build date",
+                    "lat": "52.4187775",
+                    "lon": "4.6199961"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "52.4187775",
+                    "lon": "4.6199961"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Vakschool Voor Meisjes",
+            "type": "City",
+            "description": "empty",
+            "start": "1958",
+            "end": "2005",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1958",
+                    "end": "1958",
+                    "description": "initial build date",
+                    "lat": "51.5024071",
+                    "lon": "3.9014809"
+                },
+                {
+                    "start": "2005",
+                    "end": "2005",
+                    "description": "closing date",
+                    "lat": "51.5024071",
+                    "lon": "3.9014809"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Transfo Zwevegem",
+            "type": "City",
+            "description": "empty",
+            "start": "1911",
+            "end": "2001",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1911",
+                    "end": "1911",
+                    "description": "initial build date",
+                    "lat": "50.8128471",
+                    "lon": "3.3539810"
+                },
+                {
+                    "start": "2001",
+                    "end": "2001",
+                    "description": "closing date",
+                    "lat": "50.8128471",
+                    "lon": "3.3539810"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Villa Branca",
+            "type": "City",
+            "description": "empty",
+            "start": "1912",
+            "end": "1981",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1912",
+                    "end": "1912",
+                    "description": "initial build date",
+                    "lat": "45.9498367",
+                    "lon": "8.9412441"
+                },
+                {
+                    "start": "1981",
+                    "end": "1981",
+                    "description": "closing date",
+                    "lat": "45.9498367",
+                    "lon": "8.9412441"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Militair Hospitaal Antwerpen",
+            "type": "Other",
+            "description": "empty",
+            "start": "1898",
+            "end": "1993",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1898",
+                    "end": "1898",
+                    "description": "initial build date",
+                    "lat": "51.2023201",
+                    "lon": "4.4233012"
+                },
+                {
+                    "start": "1993",
+                    "end": "1993",
+                    "description": "closing date",
+                    "lat": "51.2023201",
+                    "lon": "4.4233012"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Saunaclub Relax",
+            "type": "Other",
+            "description": "empty",
+            "start": "1910",
+            "end": "2006",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1910",
+                    "end": "1910",
+                    "description": "initial build date",
+                    "lat": "51.1967468",
+                    "lon": "5.2262368"
+                },
+                {
+                    "start": "2006",
+                    "end": "2006",
+                    "description": "closing date",
+                    "lat": "51.1967468",
+                    "lon": "5.2262368"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Heeresbekleidungsamt Bernau",
+            "type": "Other",
+            "description": "empty",
+            "start": "1936",
+            "end": "1991",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1936",
+                    "end": "1936",
+                    "description": "initial build date",
+                    "lat": "52.6671486",
+                    "lon": "13.5768938"
+                },
+                {
+                    "start": "1991",
+                    "end": "1991",
+                    "description": "closing date",
+                    "lat": "52.6671486",
+                    "lon": "13.5768938"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "AvanG shoes",
+            "type": "Other",
+            "description": "empty",
+            "start": "1860",
+            "end": "2001",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1860",
+                    "end": "1860",
+                    "description": "initial build date",
+                    "lat": "51.5435867",
+                    "lon": "5.1825538"
+                },
+                {
+                    "start": "2001",
+                    "end": "2001",
+                    "description": "closing date",
+                    "lat": "51.5435867",
+                    "lon": "5.1825538"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Marien-Finaspan",
+            "type": "Other",
+            "description": "empty",
+            "start": "1890",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1890",
+                    "end": "1890",
+                    "description": "initial build date",
+                    "lat": "51.0230598",
+                    "lon": "4.4704080"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "51.0230598",
+                    "lon": "4.4704080"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Scheepswerf Van Praet-Van Damme",
+            "type": "Other",
+            "description": "empty",
+            "start": "1830",
+            "end": "1986",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1830",
+                    "end": "1830",
+                    "description": "initial build date",
+                    "lat": "51.0367317",
+                    "lon": "4.1670299"
+                },
+                {
+                    "start": "1986",
+                    "end": "1986",
+                    "description": "closing date",
+                    "lat": "51.0367317",
+                    "lon": "4.1670299"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "De Zijpe",
+            "type": "Other",
+            "description": "empty",
+            "start": "1930",
+            "end": "1988",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1930",
+                    "end": "1930",
+                    "description": "initial build date",
+                    "lat": "51.2353859",
+                    "lon": "4.4047842"
+                },
+                {
+                    "start": "1988",
+                    "end": "1988",
+                    "description": "closing date",
+                    "lat": "51.2353859",
+                    "lon": "4.4047842"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Montevideo magazijnen",
+            "type": "Other",
+            "description": "empty",
+            "start": "1895",
+            "end": "1950",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1895",
+                    "end": "1895",
+                    "description": "initial build date",
+                    "lat": "51.2331848",
+                    "lon": "4.4045401"
+                },
+                {
+                    "start": "1950",
+                    "end": "1950",
+                    "description": "closing date",
+                    "lat": "51.2331848",
+                    "lon": "4.4045401"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Kinderopvang Duinen-heide",
+            "type": "Other",
+            "description": "empty",
+            "start": "1917",
+            "end": "2005",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1917",
+                    "end": "1917",
+                    "description": "initial build date",
+                    "lat": "50.9923248",
+                    "lon": "5.5725069"
+                },
+                {
+                    "start": "2005",
+                    "end": "2005",
+                    "description": "closing date",
+                    "lat": "50.9923248",
+                    "lon": "5.5725069"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Sinteranlage",
+            "type": "Other",
+            "description": "empty",
+            "start": "1910",
+            "end": "1995",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1910",
+                    "end": "1910",
+                    "description": "initial build date",
+                    "lat": "51.4739876",
+                    "lon": "6.7507348"
+                },
+                {
+                    "start": "1995",
+                    "end": "1995",
+                    "description": "closing date",
+                    "lat": "51.4739876",
+                    "lon": "6.7507348"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Fort de la Chartreuse",
+            "type": "Other",
+            "description": "empty",
+            "start": "1817",
+            "end": "1982",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1817",
+                    "end": "1817",
+                    "description": "initial build date",
+                    "lat": "50.6326485",
+                    "lon": "5.5967979"
+                },
+                {
+                    "start": "1982",
+                    "end": "1982",
+                    "description": "closing date",
+                    "lat": "50.6326485",
+                    "lon": "5.5967979"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Dadipark",
+            "type": "Other",
+            "description": "empty",
+            "start": "1949",
+            "end": "2003",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1949",
+                    "end": "1949",
+                    "description": "initial build date",
+                    "lat": "50.8533554",
+                    "lon": "3.0950689"
+                },
+                {
+                    "start": "2003",
+                    "end": "2003",
+                    "description": "closing date",
+                    "lat": "50.8533554",
+                    "lon": "3.0950689"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Gare de Hombourg",
+            "type": "Other",
+            "description": "empty",
+            "start": "1895",
+            "end": "1962",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1895",
+                    "end": "1895",
+                    "description": "initial build date",
+                    "lat": "50.7236099",
+                    "lon": "5.9121571"
+                },
+                {
+                    "start": "1962",
+                    "end": "1962",
+                    "description": "closing date",
+                    "lat": "50.7236099",
+                    "lon": "5.9121571"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Filature du Rabot",
+            "type": "Other",
+            "description": "empty",
+            "start": "1910",
+            "end": "1999",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1910",
+                    "end": "1910",
+                    "description": "initial build date",
+                    "lat": "51.0664597",
+                    "lon": "3.7094300"
+                },
+                {
+                    "start": "1999",
+                    "end": "1999",
+                    "description": "closing date",
+                    "lat": "51.0664597",
+                    "lon": "3.7094300"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Filature Ernest De Porre",
+            "type": "Other",
+            "description": "empty",
+            "start": "1895",
+            "end": "1982",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1895",
+                    "end": "1895",
+                    "description": "initial build date",
+                    "lat": "51.0280495",
+                    "lon": "3.7584100"
+                },
+                {
+                    "start": "1982",
+                    "end": "1982",
+                    "description": "closing date",
+                    "lat": "51.0280495",
+                    "lon": "3.7584100"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Lorette Klooster",
+            "type": "Other",
+            "description": "empty",
+            "start": "1911",
+            "end": "1991",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1911",
+                    "end": "1911",
+                    "description": "initial build date",
+                    "lat": "51.0273170",
+                    "lon": "4.4768481"
+                },
+                {
+                    "start": "1991",
+                    "end": "1991",
+                    "description": "closing date",
+                    "lat": "51.0273170",
+                    "lon": "4.4768481"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Het Zegel",
+            "type": "Other",
+            "description": "empty",
+            "start": "1836",
+            "end": "1993",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1836",
+                    "end": "1836",
+                    "description": "initial build date",
+                    "lat": "51.0175095",
+                    "lon": "4.4785070"
+                },
+                {
+                    "start": "1993",
+                    "end": "1993",
+                    "description": "closing date",
+                    "lat": "51.0175095",
+                    "lon": "4.4785070"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Boortmalt Malting",
+            "type": "Other",
+            "description": "empty",
+            "start": "1924",
+            "end": "1990",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1924",
+                    "end": "1924",
+                    "description": "initial build date",
+                    "lat": "50.9810867",
+                    "lon": "4.5740399"
+                },
+                {
+                    "start": "1990",
+                    "end": "1990",
+                    "description": "closing date",
+                    "lat": "50.9810867",
+                    "lon": "4.5740399"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Brepols Printing",
+            "type": "Other",
+            "description": "empty",
+            "start": "1900",
+            "end": "2002",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1900",
+                    "end": "1900",
+                    "description": "initial build date",
+                    "lat": "51.3233490",
+                    "lon": "4.9519601"
+                },
+                {
+                    "start": "2002",
+                    "end": "2002",
+                    "description": "closing date",
+                    "lat": "51.3233490",
+                    "lon": "4.9519601"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Caestert Quarry",
+            "type": "Other",
+            "description": "empty",
+            "start": "1100",
+            "end": "1850",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1100",
+                    "end": "1100",
+                    "description": "initial build date",
+                    "lat": "50.7949982",
+                    "lon": "5.6906190"
+                },
+                {
+                    "start": "1850",
+                    "end": "1850",
+                    "description": "closing date",
+                    "lat": "50.7949982",
+                    "lon": "5.6906190"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Quartiere delle Rose",
+            "type": "Other",
+            "description": "empty",
+            "start": "1994",
+            "end": "1994",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1994",
+                    "end": "1994",
+                    "description": "initial build date",
+                    "lat": "45.3419876",
+                    "lon": "9.1875257"
+                },
+                {
+                    "start": "1994",
+                    "end": "1994",
+                    "description": "closing date",
+                    "lat": "45.3419876",
+                    "lon": "9.1875257"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Homburg conserven",
+            "type": "Other",
+            "description": "empty",
+            "start": "1949",
+            "end": "2003",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1949",
+                    "end": "1949",
+                    "description": "initial build date",
+                    "lat": "51.7262077",
+                    "lon": "5.8737330"
+                },
+                {
+                    "start": "2003",
+                    "end": "2003",
+                    "description": "closing date",
+                    "lat": "51.7262077",
+                    "lon": "5.8737330"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Heilig-Hartziekenhuis",
+            "type": "Other",
+            "description": "empty",
+            "start": "1965",
+            "end": "2009",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1965",
+                    "end": "1965",
+                    "description": "initial build date",
+                    "lat": "50.8129768",
+                    "lon": "3.1196630"
+                },
+                {
+                    "start": "2009",
+                    "end": "2009",
+                    "description": "closing date",
+                    "lat": "50.8129768",
+                    "lon": "3.1196630"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Bowling De Witte Molen",
+            "type": "Other",
+            "description": "empty",
+            "start": "1920",
+            "end": "2005",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1920",
+                    "end": "1920",
+                    "description": "initial build date",
+                    "lat": "51.0017967",
+                    "lon": "4.8346429"
+                },
+                {
+                    "start": "2005",
+                    "end": "2005",
+                    "description": "closing date",
+                    "lat": "51.0017967",
+                    "lon": "4.8346429"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Passionistenklooster",
+            "type": "Other",
+            "description": "empty",
+            "start": "1928",
+            "end": "2005",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1928",
+                    "end": "1928",
+                    "description": "initial build date",
+                    "lat": "51.0545616",
+                    "lon": "4.5438619"
+                },
+                {
+                    "start": "2005",
+                    "end": "2005",
+                    "description": "closing date",
+                    "lat": "51.0545616",
+                    "lon": "4.5438619"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Aflex",
+            "type": "Other",
+            "description": "empty",
+            "start": "1979",
+            "end": "2008",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1979",
+                    "end": "1979",
+                    "description": "initial build date",
+                    "lat": "51.0290222",
+                    "lon": "4.4991851"
+                },
+                {
+                    "start": "2008",
+                    "end": "2008",
+                    "description": "closing date",
+                    "lat": "51.0290222",
+                    "lon": "4.4991851"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Hembrug",
+            "type": "Other",
+            "description": "empty",
+            "start": "1900",
+            "end": "2000",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1900",
+                    "end": "1900",
+                    "description": "initial build date",
+                    "lat": "52.4220238",
+                    "lon": "4.8309350"
+                },
+                {
+                    "start": "2000",
+                    "end": "2000",
+                    "description": "closing date",
+                    "lat": "52.4220238",
+                    "lon": "4.8309350"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Eichhof",
+            "type": "Other",
+            "description": "empty",
+            "start": "1886",
+            "end": "1998",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1886",
+                    "end": "1886",
+                    "description": "initial build date",
+                    "lat": "51.9330597",
+                    "lon": "8.5381117"
+                },
+                {
+                    "start": "1998",
+                    "end": "1998",
+                    "description": "closing date",
+                    "lat": "51.9330597",
+                    "lon": "8.5381117"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Marien Hospital",
+            "type": "Other",
+            "description": "empty",
+            "start": "1957",
+            "end": "2005",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1957",
+                    "end": "1957",
+                    "description": "initial build date",
+                    "lat": "51.4601746",
+                    "lon": "7.4530811"
+                },
+                {
+                    "start": "2005",
+                    "end": "2005",
+                    "description": "closing date",
+                    "lat": "51.4601746",
+                    "lon": "7.4530811"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "KWE Stahl- Und Industriebau Gmbh",
+            "type": "Other",
+            "description": "empty",
+            "start": "1928",
+            "end": "2006",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1928",
+                    "end": "1928",
+                    "description": "initial build date",
+                    "lat": "50.8192482",
+                    "lon": "6.9899569"
+                },
+                {
+                    "start": "2006",
+                    "end": "2006",
+                    "description": "closing date",
+                    "lat": "50.8192482",
+                    "lon": "6.9899569"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "Camp Gabrielle Petit Hitfeld",
+            "type": "Other",
+            "description": "empty",
+            "start": "1946",
+            "end": "1992",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1946",
+                    "end": "1946",
+                    "description": "initial build date",
+                    "lat": "50.7310982",
+                    "lon": "6.1304989"
+                },
+                {
+                    "start": "1992",
+                    "end": "1992",
+                    "description": "closing date",
+                    "lat": "50.7310982",
+                    "lon": "6.1304989"
+                }
+            ]
+        }
+    },
+    {
+        "location": {
+            "title": "S.A. Charbonnage du Hasard",
+            "type": "Other",
+            "description": "empty",
+            "start": "1907",
+            "end": "1977",
+            "picture": "",
+            "point": [
+                {
+                    "start": "1907",
+                    "end": "1907",
+                    "description": "initial build date",
+                    "lat": "50.6809731",
+                    "lon": "5.6699109"
+                },
+                {
+                    "start": "1977",
+                    "end": "1977",
+                    "description": "closing date",
+                    "lat": "50.6809731",
+                    "lon": "5.6699109"
+                }
+            ]
+        }
+    }
+]
