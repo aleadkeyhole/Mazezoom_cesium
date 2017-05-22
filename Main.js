@@ -12,10 +12,12 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
   @stopTime :   Maximal end date for the timeline on the Cesium view
 */
 var types = new Set();
+var types_colors = new Set();
 var startTime = new Date(3000, 0, 0, 0, 0, 0, 0);
 var stopTime = new Date(0, 0, 0, 0, 0, 0, 0);
-var intervals = new Cesium.TimeIntervalCollection();
 var stalledEntities = [];
+var geocoder;
+var prevTheme = "dark";
 
 /*Toggles the control panel in the Cesium view*/
 $("#cb_toggle_display").change(function () {
@@ -32,9 +34,21 @@ $(document).ready(function () {
             init(data);
         }
     });
-       geocodeAddress(geocoder, "Roermond");
+    geocoder = new google.maps.Geocoder();
     initConfig();
 });
+
+/* Initialisation of the interface data */
+function init(entityList) {
+    for (var x = 0; x < entityList.length; x++) {
+        let i = entityList[x];
+        calibrateTimeline(i);
+        renderMarkers(i);
+    }
+    initializeTimeline();
+    renderFilter(types);
+}
+
 
 /*Initialization of configuration file, now only loads preset_locations*/
 function initConfig() {
@@ -47,10 +61,21 @@ function initConfig() {
                     }
                     (function () {
                         $(".location_preset").click((function (e) {
-                            var adress = e.delegateTarget.innerText;
-                            var geocoder = new google.maps.Geocoder();
-                            geocodeAddress(geocoder, adress);
-                            $("#location_presets_toggle_button").html(adress + '<span class="caret" ></span>');
+                            var address = e.delegateTarget.innerText;
+                            geocodeAddress(geocoder, address);
+                            $("#location_presets_toggle_button").html(address + '<span class="caret" ></span>');
+                        }).bind(this));
+                    })();
+                    break;
+                case 'themes':
+                    $("#themeSelection").append('<label>Themes:</label>');
+                    for (var i = 0; i < data[key].length; i++) {
+                        $("#themeSelection").append(' <div class="radio"><label><input type="radio" class="radioIput" name="optradio" value="' + data[key][i] + '">' + data[key][i] + '</label></div>');
+                    }
+                    (function () {
+                        $(".radioIput").click((function (e) {
+                            var theme = e.delegateTarget.value;
+                            changeTheme(theme);
                         }).bind(this));
                     })();
                     break;
@@ -61,6 +86,17 @@ function initConfig() {
         });
     });
 }
+
+function changeButtons(theme) {
+    var buttons = $("button");
+    for (var i = 0; i < buttons.length; i++) {
+        $(buttons[i]).removeClass(prevTheme);
+        $(buttons[i]).addClass(theme);
+    }
+    prevTheme = theme;
+}
+
+
 
 /*Get long lat data from the google api based on a location name. Example:"Roggel"
   @geocoder : GeoCoder instance
@@ -82,6 +118,18 @@ function geocodeAddress(geocoder, value) {
         }
     });
 };
+
+// Changes the theme based on the selected radiobutton
+function changeTheme(theme) {
+    
+    cesiumContainer = document.getElementById("cesiumContainer");
+    cesiumContainer.className = "";
+    cesiumContainer.className = theme;
+    var panel = document.getElementById("controlPanel");
+    panel.className = "";
+    panel.className = theme;
+    changeButtons(theme);
+}
 
 /*Calibrates the timeline values, checking for the minimal start and end time if present on the object i
   @i : Single entity Json object
@@ -117,7 +165,7 @@ function initializeTimeline() {
     viewer.timeline.zoomTo(startTime, stopTime);
     window.setInterval(function () {
         updateTimeMeta();
-    }, 1000);
+    }, 1800);
 }
 
 /* Adds a julian function to the Date prototype */
@@ -125,30 +173,34 @@ Date.prototype.getJulian = function () {
     return Math.floor((this / 86400000) - (this.getTimezoneOffset() / 1440) + 2440587.5);
 }
 
-
-
 /*
     Updates the globe to match the selected time
 */
 function updateTimeMeta() {
-    let currentTime = viewer.clock.currentTime; 
+    let currentTime = viewer.clock.currentTime;
     var context = this;
     for (var i = 0; i < viewer.entities._entities.length; i++) {
         let entity = viewer.entities._entities._array[i];
-        let interval = viewer.entities._entities._array[i].interval;
-        console.log(interval)
-        if (Cesium.TimeInterval.contains(interval, currentTime)) {
-            console.log("timeinterval present : ", interval);
-            if(entity._show !== true){
+        if (entity._filtered === false) {
+            let interval = viewer.entities._entities._array[i]._interval;
+            if (Cesium.TimeInterval.contains(interval, currentTime)) {
                 entity._show = true;
-            }
-        } else {
-            console.log("Curtime not within timeinterval");
-            if(entity._show != false){
+            } else {
                 entity._show = false;
             }
-            
+        } else {
+            entity._show = false;
         }
+    }
+}
+
+//Get's the random color associated with each type on load
+function getTypeRandomColor(type) {
+    for (let [key, value] of types_colors.entries()) {
+        if (type === value.type) {
+            return value.color;
+        }
+        ;
     }
 }
 
@@ -159,7 +211,6 @@ function updateTimeMeta() {
 function createInterval(i) {
     let intervalStartTime = new Date(i.location.start, 0, 0, 0, 0, 0, 0);
     intervalStartTime = intervalStartTime.toISOString();
-
 
     let intervalEndTime = new Date(i.location.end, 0, 0, 0, 0, 0, 0);
     intervalEndTime = intervalEndTime.toISOString();
@@ -180,19 +231,32 @@ function createInterval(i) {
 */
 function renderMarkers(entity) {
     let context = this;
-    let i = entity;
+    var i = entity;
+    var type = i.location.type;
+
+    if (!types.has(type)) {
+        let colorCode = {
+            color: Cesium.Color.fromRandom(),
+            type: type
+        }
+        types_colors.add(colorCode);
+    }
+    types.add(type);
+    var entityColor = getTypeRandomColor(type);
+
     viewer.entities.add({
         name: i.location.title,
         id: i.location.id,
-        type: i.location.type,
+        type: type,
         show: false,
+        filtered: false,
         interval: context.createInterval(i),
         /*In the future we can add anything we want to the modal by adding properties to the description key*/
-        description: "<h1>Type : " + i.location.type + "</h1><h1>Start : " + i.location.start + " End:  " + i.location.end +"</h1><p>" + "Description : " + i.location.description + "</p>",
+        description: "<h1 style='color: " + entityColor.toCssColorString() + "' >Type : " + i.location.type + "</h1><h1>Start : " + i.location.start + " End:  " + i.location.end + "</h1><p>" + "Description : " + i.location.description + "</p>",
         position: Cesium.Cartesian3.fromDegrees(i.location.point[0].lon, i.location.point[0].lat),
         point: {
             pixelSize: 5,
-            color: Cesium.Color.RED,
+            color: getTypeRandomColor(i.location.type),
             outlineColor: Cesium.Color.WHITE,
             outlineWidth: 2
         },
@@ -205,20 +269,7 @@ function renderMarkers(entity) {
             pixelOffset: new Cesium.Cartesian2(0, -9)
         }
     });
-}
 
-/* Initialisation of the interface data */
-function init(entityList) {
-    for (var x = 0; x < entityList.length; x++) {
-        let i = entityList[x];
-        if (i.location.type !== undefined) {
-            types.add(i.location.type);
-        }
-        calibrateTimeline(i);
-        renderMarkers(i);
-        renderFilter(types);
-    }
-    initializeTimeline();
 }
 
 /*Renders the filter preferences and adds the click event on each element, settinf the correct value to the dropdown button and filtering the list based on the event sender
@@ -256,9 +307,9 @@ function loadJSON(filepath, callback) {
 function filterList(filterType, viewer) {
     for (var i = 0; i < viewer.entities._entities._array.length; i++) {
         if (filterType.indexOf(viewer.entities._entities._array[i]._type) <= -1) {
-            viewer.entities._entities._array[i]._show = false;
+            viewer.entities._entities._array[i]._filtered = false;
         } else {
-            viewer.entities._entities._array[i]._show = true;
+            viewer.entities._entities._array[i]._filtered = true;
         }
     }
 }

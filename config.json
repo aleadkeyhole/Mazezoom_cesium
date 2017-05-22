@@ -1,3 +1,4 @@
 {
-  "presets_locations": ["Roermond","Swalmen","Echt","Melick"]
+  "presets_locations": ["Roermond","Swalmen","Echt","Melick"],
+  "themes": ["dark","cesium-lighter","delahaye"]
 }
