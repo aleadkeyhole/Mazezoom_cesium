@@ -1,6 +1,11 @@
 /* Key for bingmaps api*/
 Cesium.BingMapsApi.defaultKey = 'AtzPOZBe-iIHEFJY2xCqo8sxLNzYTkVM6_rhNH8sD0qCr9CNZTLR5s7f17VwZvLH';
 
+// var extent = Cesium.Rectangle.fromDegrees(9.0000,53.0000,9.0000,54.0001);
+
+// Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+// Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
+
 /*Renders the Cesium interface*/
 var viewer = new Cesium.Viewer('cesiumContainer', {
     navigationHelpButton: false
@@ -17,7 +22,7 @@ var startTime = new Date(3000, 0, 0, 0, 0, 0, 0);
 var stopTime = new Date(0, 0, 0, 0, 0, 0, 0);
 var stalledEntities = [];
 var geocoder;
-var prevTheme = "dark";
+var prevTheme = "";
 
 /*Toggles the control panel in the Cesium view*/
 $("#cb_toggle_display").change(function () {
@@ -40,6 +45,7 @@ $(document).ready(function () {
 
 /* Initialisation of the interface data */
 function init(entityList) {
+    
     for (var x = 0; x < entityList.length; x++) {
         let i = entityList[x];
         calibrateTimeline(i);
@@ -52,6 +58,7 @@ function init(entityList) {
 
 /*Initialization of configuration file, now only loads preset_locations*/
 function initConfig() {
+    initDaterangepicker();
     loadJSON('config.json', function (data) {
         $.each(data, function (key, value) {
             switch (key) {
@@ -62,7 +69,7 @@ function initConfig() {
                     (function () {
                         $(".location_preset").click((function (e) {
                             var address = e.delegateTarget.innerText;
-                            geocodeAddress(geocoder, address);
+                            geocodeAddress(geocoder, address,15000.0);
                             $("#location_presets_toggle_button").html(address + '<span class="caret" ></span>');
                         }).bind(this));
                     })();
@@ -79,6 +86,8 @@ function initConfig() {
                         }).bind(this));
                     })();
                     break;
+                case 'default_view':
+                geocodeAddress(geocoder, data[key], 15000000.0);
                 default:
                     console.log("You've tried to add a config variable that hasn't been recognised");
                     break;
@@ -87,6 +96,7 @@ function initConfig() {
     });
 }
 
+/*Adds a theme class to the buttons on the cesiumContianer div */
 function changeButtons(theme) {
     var buttons = $("button");
     for (var i = 0; i < buttons.length; i++) {
@@ -96,14 +106,12 @@ function changeButtons(theme) {
     prevTheme = theme;
 }
 
-
-
 /*Get long lat data from the google api based on a location name. Example:"Roggel"
   @geocoder : GeoCoder instance
   @value : Selected search term
   @viewer.camera.flyTo : Function : Set's te camera to the result of the searched term's location
 */
-function geocodeAddress(geocoder, value) {
+function geocodeAddress(geocoder, value, height) {
     geocoder.geocode({
         'address': value
     }, function (results, status) {
@@ -111,7 +119,7 @@ function geocodeAddress(geocoder, value) {
             let lat = results[0].geometry.location.lat();
             let long = results[0].geometry.location.lng();
             viewer.camera.flyTo({
-                destination: Cesium.Cartesian3.fromDegrees(long, lat, 15000.0)
+                destination: Cesium.Cartesian3.fromDegrees(long, lat, height)
             });
         } else {
             console.log('Geocode was not successful for the following reason: ' + status);
@@ -121,7 +129,10 @@ function geocodeAddress(geocoder, value) {
 
 // Changes the theme based on the selected radiobutton
 function changeTheme(theme) {
-    
+
+    var daterangepicker = document.getElementById("dateRange");    
+    daterangepicker.className = "";
+    daterangepicker.className = theme;
     cesiumContainer = document.getElementById("cesiumContainer");
     cesiumContainer.className = "";
     cesiumContainer.className = theme;
@@ -223,6 +234,13 @@ function createInterval(i) {
         data: null
     });
     return timeInterval;
+}
+
+function initDaterangepicker(){
+    console.log(startTime);
+    console.log(stopTime);
+    var datepicker = document.getElementById("dateRange");
+    $(datepicker).daterangepicker();
 }
 
 
