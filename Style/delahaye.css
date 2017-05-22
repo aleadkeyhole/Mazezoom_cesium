@@ -1,16 +1,20 @@
 /*.delahaye button {
-    color: #cc9900!important;
+    color: #6441a5 !important;
 }*/
 
-.delahaye  {
-    color: #cc9900!important;
+.delahaye  .daterangepicker{
+    color: #6441a5 !important;
+    background-color:  #6441a5 !important;
 }
 
+.delahaye  {
+    color: #6441a5 !important;
+}
 
 .delahaye .cesium-button {
     color: #111;
     fill: #111;
-    background: #cc9900;
+    background: #6441a5 ;
     border: 1px solid #759dc0;
 }
 .delahaye .cesium-button:focus {
@@ -26,8 +30,8 @@
     box-shadow: 0 0 8px #777;
 }
 .delahaye .cesium-button:active {
-    color: #cc9900;
-    fill: #cc9900;
+    color: #6441a5 ;
+    fill: #6441a5 ;
     background: #48b;
     border-color: #ea0;
 }
@@ -53,19 +57,19 @@
     color: #ea4;
 }
 .delahaye .cesium-animation-themeNormal {
-    color: #cc9900;
+    color: #6441a5 ;
 }
 .delahaye .cesium-animation-themeHover {
-    color: #cc9900;
+    color: #6441a5 ;
 }
 .delahaye .cesium-animation-themeSelect {
-    color: #cc9900;
+    color: #6441a5 ;
 }
 .delahaye .cesium-animation-themeDisabled {
-    color: #cc9900;
+    color: #6441a5 ;
 }
 .delahaye .cesium-animation-themeKnob {
-    color: #cc9900;
+    color: #6441a5 ;
 }
 .delahaye .cesium-animation-themePointer {
     color: #FA5;
@@ -110,7 +114,7 @@
     fill: #818181;
 }
 .delahaye .cesium-animation-shuttleRingBack {
-    fill: #cc9900;
+    fill: #6441a5 ;
     fill-opacity: 1;
     stroke: #fff;
     stroke-width: 1.2;
@@ -148,7 +152,7 @@
 .delahaye .cesium-widget-errorPanel-content {
     border: 1px solid #526F82;
     border-radius: 7px;
-    background-color: #cc9900;
+    background-color: #6441a5 ;
     color: black;
 }
 .delahaye .cesium-widget-errorPanel-header {
@@ -160,18 +164,18 @@
     color: black;
 }
 .delahaye .cesium-viewer-geocoderContainer:hover .cesium-geocoder-input {
-     background-color: #cc9900;
-    box-shadow: 0 0 8px #cc9900;
+     background-color: #6441a5 ;
+    box-shadow: 0 0 8px #6441a5 ;
 }
 .delahaye .cesium-geocoder-searchButton {
-    background-color: #cc9900;
+    background-color: #6441a5 ;
     fill: #111;
 }
 .delahaye .cesium-geocoder-searchButton:hover {
-    background-color: #cc9900;
+    background-color: #6441a5 ;
 }
 .delahaye .cesium-timeline-bar {
-    background: linear-gradient(to bottom, #cc9900 0%, #cc9900 50%, #cc9900 100%);
+    background: linear-gradient(to bottom, #6441a5  0%, #6441a5  50%, #6441a5  100%);
 }
 .delahaye .cesium-timeline-ticLabel {
     color: #000;
@@ -189,7 +193,7 @@
 }
 .delahaye .cesium-navigation-help-instructions {
     border: 1px solid #759dc0;
-    background-color: #cc9900;
+    background-color: #6441a5 ;
 }
 .delahaye .cesium-navigation-help-pan {
     color: #66ccee;
@@ -216,12 +220,12 @@
     border-right: 1px solid #759dc0;
 }
 .delahaye .cesium-navigation-button-selected {
-    background-color: #cc9900;
+    background-color: #6441a5 ;
 }
 .delahaye .cesium-navigation-button-unselected {
-    background-color: #cc9900;
+    background-color: #6441a5 ;
 }
 .delahaye .cesium-navigation-button-unselected:hover {
-    background-color: #cc9900;
+    background-color: #6441a5 ;
 }
 

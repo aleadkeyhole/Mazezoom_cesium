@@ -52,6 +52,8 @@ function init(entityList) {
         renderMarkers(i);
     }
     initializeTimeline();
+    var resetType = "View all";
+    types.add(resetType);
     renderFilter(types);
 }
 
@@ -130,6 +132,12 @@ function geocodeAddress(geocoder, value, height) {
 // Changes the theme based on the selected radiobutton
 function changeTheme(theme) {
     $(".calendar-table").add("class", theme);
+    $(".daterangepicker").add("class", theme);
+    
+    var daterangepickercss = document.getElementsByClassName("daterangepicker");
+    console.log(daterangepickercss[0].className);
+    $(daterangepickercss[0]).removeClass(prevTheme);
+    $(daterangepickercss[0]).addClass(theme);
     var daterangepicker = document.getElementById("dateRange");
     daterangepicker.className = "";
     daterangepicker.className = theme;
@@ -239,13 +247,15 @@ function createInterval(i) {
 
 function initDaterangepicker() {
     var datepicker = document.getElementById("dateRange");
-    $(datepicker).daterangepicker({ startDate: this.startTime,
-        endDate: this.stopTime,});
+    $(datepicker).daterangepicker({
+        startDate: this.startTime,
+        endDate: this.stopTime,
+    });
 
 
     $(datepicker).on('apply.daterangepicker', function (ev, picker) {
         let startDate = new Date(picker.startDate.format('YYYY-MM-DD') + "Z");
-        let endDate = new Date(picker.endDate.format('YYYY-MM-DD') + "Z"); 
+        let endDate = new Date(picker.endDate.format('YYYY-MM-DD') + "Z");
         this.startTime = new Cesium.JulianDate.fromDate(startDate);
         this.stopTime = new Cesium.JulianDate.fromDate(endDate);
         viewer.clock.startTime = this.startTime;
@@ -261,7 +271,7 @@ function initDaterangepicker() {
 }
 
 function toDate(dateStr) {
-    const [name ,month, day, year] = dateStr.split(" ")
+    const [name, month, day, year] = dateStr.split(" ")
     return new Date(year, month - 1, day)
 }
 /*Renders the result of the get request data onto the Cesium framework as marker items. Note: at the end of this function the timeline is initialized
@@ -343,11 +353,17 @@ function loadJSON(filepath, callback) {
   @viewer : Cesium viewer instance containing the entities rendered on the Cesium container   
 */
 function filterList(filterType, viewer) {
-    for (var i = 0; i < viewer.entities._entities._array.length; i++) {
-        if (filterType.indexOf(viewer.entities._entities._array[i]._type) <= -1) {
+    if (filterType === "View all") {
+        for (var i = 0; i < viewer.entities._entities._array.length; i++) {
             viewer.entities._entities._array[i]._filtered = false;
-        } else {
-            viewer.entities._entities._array[i]._filtered = true;
+        }
+    } else {
+        for (var i = 0; i < viewer.entities._entities._array.length; i++) {
+            if (filterType.indexOf(viewer.entities._entities._array[i]._type) <= -1) {
+                viewer.entities._entities._array[i]._filtered = false;
+            } else {
+                viewer.entities._entities._array[i]._filtered = true;
+            }
         }
     }
 }
