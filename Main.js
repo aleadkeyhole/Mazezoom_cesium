@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 /* Initialisation of the interface data */
 function init(entityList) {
-    
+
     for (var x = 0; x < entityList.length; x++) {
         let i = entityList[x];
         calibrateTimeline(i);
@@ -69,7 +69,7 @@ function initConfig() {
                     (function () {
                         $(".location_preset").click((function (e) {
                             var address = e.delegateTarget.innerText;
-                            geocodeAddress(geocoder, address,15000.0);
+                            geocodeAddress(geocoder, address, 15000.0);
                             $("#location_presets_toggle_button").html(address + '<span class="caret" ></span>');
                         }).bind(this));
                     })();
@@ -87,7 +87,7 @@ function initConfig() {
                     })();
                     break;
                 case 'default_view':
-                geocodeAddress(geocoder, data[key], 15000000.0);
+                    geocodeAddress(geocoder, data[key], 15000000.0);
                 default:
                     console.log("You've tried to add a config variable that hasn't been recognised");
                     break;
@@ -129,8 +129,8 @@ function geocodeAddress(geocoder, value, height) {
 
 // Changes the theme based on the selected radiobutton
 function changeTheme(theme) {
-
-    var daterangepicker = document.getElementById("dateRange");    
+    $(".calendar-table").add("class", theme);
+    var daterangepicker = document.getElementById("dateRange");
     daterangepicker.className = "";
     daterangepicker.className = theme;
     cesiumContainer = document.getElementById("cesiumContainer");
@@ -141,6 +141,7 @@ function changeTheme(theme) {
     panel.className = theme;
     changeButtons(theme);
 }
+
 
 /*Calibrates the timeline values, checking for the minimal start and end time if present on the object i
   @i : Single entity Json object
@@ -236,14 +237,33 @@ function createInterval(i) {
     return timeInterval;
 }
 
-function initDaterangepicker(){
-    console.log(startTime);
-    console.log(stopTime);
+function initDaterangepicker() {
     var datepicker = document.getElementById("dateRange");
-    $(datepicker).daterangepicker();
+    $(datepicker).daterangepicker({ startDate: this.startTime,
+        endDate: this.stopTime,});
+
+
+    $(datepicker).on('apply.daterangepicker', function (ev, picker) {
+        let startDate = new Date(picker.startDate.format('YYYY-MM-DD') + "Z");
+        let endDate = new Date(picker.endDate.format('YYYY-MM-DD') + "Z"); 
+        this.startTime = new Cesium.JulianDate.fromDate(startDate);
+        this.stopTime = new Cesium.JulianDate.fromDate(endDate);
+        viewer.clock.startTime = this.startTime;
+        viewer.clock.shouldAnimate = true;
+        viewer.clock.stopTime = this.stopTime;
+        viewer.clock.currentTime = this.startTime;
+        viewer.clock.clockRange = Cesium.ClockRange.CLAMPED;
+        viewer.timeline.updateFromClock();
+        viewer.timeline.zoomTo(this.startTime, this.stopTime);
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+
+    });
 }
 
-
+function toDate(dateStr) {
+    const [name ,month, day, year] = dateStr.split(" ")
+    return new Date(year, month - 1, day)
+}
 /*Renders the result of the get request data onto the Cesium framework as marker items. Note: at the end of this function the timeline is initialized
   @data : List containing entity Json objects
 */

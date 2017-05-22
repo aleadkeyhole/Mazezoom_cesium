@@ -22,7 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/Build/Cesium/Cesium.js"></script>
-    
+
     <!-- Include Required Prerequisites -->
     <!--<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
@@ -41,6 +41,12 @@
         body {
           color:aliceblue;
         }
+        .daterangepicker .calendar-table {
+    border: 1px solid rgba(42, 42, 42, 0.8);
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(42, 42, 42, 0.8);
+}
     </style>
   </head>
   <body>
@@ -72,7 +78,7 @@
       <form id="themeSelection"></form>
       <hr>
       </hr>
-      <input type="text"  class="form-control" id="dateRange" style="width:160px; height:34px;"/>
+      <input type="text"  class="form-control" id="dateRange" style="width:160px; height:34px; color:black!important;"/>
     </div>
 </script>
 
