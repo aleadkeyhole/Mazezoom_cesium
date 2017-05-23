@@ -1,11 +1,6 @@
 /* Key for bingmaps api*/
 Cesium.BingMapsApi.defaultKey = 'AtzPOZBe-iIHEFJY2xCqo8sxLNzYTkVM6_rhNH8sD0qCr9CNZTLR5s7f17VwZvLH';
 
-// var extent = Cesium.Rectangle.fromDegrees(9.0000,53.0000,9.0000,54.0001);
-
-// Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
-// Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
-
 /*Renders the Cesium interface*/
 var viewer = new Cesium.Viewer('cesiumContainer', {
     navigationHelpButton: false
@@ -131,13 +126,6 @@ function geocodeAddress(geocoder, value, height) {
 
 // Changes the theme based on the selected radiobutton
 function changeTheme(theme) {
-    $(".calendar-table").add("class", theme);
-    $(".daterangepicker").add("class", theme);
-    
-    var daterangepickercss = document.getElementsByClassName("daterangepicker");
-    console.log(daterangepickercss[0].className);
-    $(daterangepickercss[0]).removeClass(prevTheme);
-    $(daterangepickercss[0]).addClass(theme);
     var daterangepicker = document.getElementById("dateRange");
     daterangepicker.className = "";
     daterangepicker.className = theme;
@@ -186,11 +174,6 @@ function initializeTimeline() {
     window.setInterval(function () {
         updateTimeMeta();
     }, 1800);
-}
-
-/* Adds a julian function to the Date prototype */
-Date.prototype.getJulian = function () {
-    return Math.floor((this / 86400000) - (this.getTimezoneOffset() / 1440) + 2440587.5);
 }
 
 /*
@@ -245,14 +228,15 @@ function createInterval(i) {
     return timeInterval;
 }
 
+
+/* Initialization of the datePicker 
+*/
 function initDaterangepicker() {
     var datepicker = document.getElementById("dateRange");
     $(datepicker).daterangepicker({
         startDate: this.startTime,
         endDate: this.stopTime,
     });
-
-
     $(datepicker).on('apply.daterangepicker', function (ev, picker) {
         let startDate = new Date(picker.startDate.format('YYYY-MM-DD') + "Z");
         let endDate = new Date(picker.endDate.format('YYYY-MM-DD') + "Z");
@@ -270,10 +254,6 @@ function initDaterangepicker() {
     });
 }
 
-function toDate(dateStr) {
-    const [name, month, day, year] = dateStr.split(" ")
-    return new Date(year, month - 1, day)
-}
 /*Renders the result of the get request data onto the Cesium framework as marker items. Note: at the end of this function the timeline is initialized
   @data : List containing entity Json objects
 */
@@ -300,7 +280,7 @@ function renderMarkers(entity) {
         filtered: false,
         interval: context.createInterval(i),
         /*In the future we can add anything we want to the modal by adding properties to the description key*/
-        description: "<h1 style='color: " + entityColor.toCssColorString() + "' >Type : " + i.location.type + "</h1><h1>Start : " + i.location.start + " End:  " + i.location.end + "</h1><p>" + "Description : " + i.location.description + "</p>",
+        description: "<h1 style='color: " + entityColor.toCssColorString() + "' >Type : " + i.location.type + "</h1><img style='height: 150px; width:200;' src='"+ (i.location.picture == null ? "https://www.theclementimall.com/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png": i.location.picture   ) +  "'></img><h1>Start : " + i.location.start + " End:  " + i.location.end + "</h1><p>" + "Description : " + i.location.description + "</p>",
         position: Cesium.Cartesian3.fromDegrees(i.location.point[0].lon, i.location.point[0].lat),
         point: {
             pixelSize: 5,
