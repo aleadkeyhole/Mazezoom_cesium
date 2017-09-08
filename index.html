@@ -9,7 +9,7 @@
     <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-    <title>Axiell Cesium view</title>
+    <title>Cesium view</title>
 
     <link href="http://cesiumjs.org/releases/1.15/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,25 +18,42 @@
     <link rel="stylesheet" href="/Style/delahaye.css">
     <link href="http://cesiumjs.org/Cesium/Build/Cesium/Widgets/widgets.css" rel="stylesheet"/>
     <link href="http://cesiumjs.org/Cesium/Build/Cesium/Widgets/lighter.css" rel="stylesheet"/>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/Build/Cesium/Cesium.js"></script>
 
+    <!-- Include Required Prerequisites -->
+    <!--<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
     <style>
-      html, body, #timeControlsContainer {
+      html,  #timeControlsContainer ,#dateRange{
       width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      
       font-family: sans-serif;
         }
+        body {
+          color:aliceblue;
+        }
+        .daterangepicker .calendar-table {
+    border: 1px solid rgba(42, 42, 42, 0.8);
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(42, 42, 42, 0.8);
+}
     </style>
   </head>
   <body>
-
     <div class="container" style="height:100%; width:100%; padding:0px;;  margin:0%!important;">
-      <!--#cesiumContainer :  Element on which Cesium view is rendered-->
+        <!--#cesiumContainer :  Element on which Cesium view is rendered-->
       <div id="cesiumContainer" ></div>
-      
-      
-      <!--#controlPanel : Container of additional user controls -->
+        <!--#controlPanel : Container of additional user controls -->
       <div id="controlPanel">Control panel<p>
       <label>
         <input id="cb_toggle_display" type="checkbox" unchecked />
@@ -45,22 +62,24 @@
       <br/>
       <div id="menu" style="display: none">
         <div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" id="preference_toggle_button" data-toggle="dropdown">filter markers<span class="caret" ></span></button>
+          <button class="btn btn-default dropdown-toggle" type="button" id="preference_toggle_button" style="color:black;" data-toggle="dropdown">filter markers<span class="caret" ></span></button>
           <ul id="dd_preferences" class="dropdown-menu">
-            <li class="preference"><a>View all</a></li>
           </ul>
       </div>
       <hr>
       </hr>
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="location_presets_toggle_button" data-toggle="dropdown">location prefix<span class="caret" ></span></button>
-        <ul id="presets_locations" class="dropdown-menu">
-        </ul>
+        <button class="btn btn-default dropdown-toggle" type="button" id="location_presets_toggle_button" style="color:black;" data-toggle="dropdown">location prefix<span class="caret" ></span></button>
+        <ul id="presets_locations" class="dropdown-menu"></ul>
       </div>
-       <hr>
+      <hr>
       </hr>
       <form id="themeSelection"></form>
+      <hr>
+      </hr>
+      <input type="text"  class="form-control" id="dateRange" style="width:160px; height:34px; color:black!important;"/>
     </div>
+</script>
 
   </body>
   <!--Core JavaScript logic-->
